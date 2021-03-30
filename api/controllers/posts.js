@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-const Post = require('../model/dog')
+const Post = require('../model/post')
 
 // all posts route //
 router.get('/', async(req, res) => {
