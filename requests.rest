@@ -1,0 +1,14 @@
+GET http://localhost:5000/
+
+###
+GET  http://localhost:5000/
+
+###
+POST http://localhost:5000/
+
+post = {
+    "title": "post1",
+    "name": "bob"
+    "body": "mypost"
+}
+
