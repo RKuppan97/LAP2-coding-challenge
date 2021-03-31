@@ -1,14 +1,12 @@
-GET http://localhost:5000/
+GET http://localhost:8000/
 
 ###
-GET  http://localhost:5000/
+post http://localhost:8000/posts
+Content-Type: application/json
 
-###
-POST http://localhost:5000/
-
-post = {
-    "title": "post1",
-    "name": "bob"
-    "body": "mypost"
+{
+  "title": "oaisdj",
+  "name": "asd",
+  "body": "ada"
 }
 

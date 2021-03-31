@@ -1,4 +1,4 @@
-const db = require('../dbConfig')
+const db = require('../dbConfig/init')
 
 class Post {
     constructor(data){
@@ -24,7 +24,7 @@ class Post {
         return new Promise (async (resolve, reject) => {
             try {
                 let newPostData = await db.query(`INSERT INTO posts (title, name, body) VALUES ($1, $2, $3) RETURNING *;`, [title, name, body]);
-                let newDog = new Post(newPostData.rows[0]);
+                let newPost = new Post(newPostData.rows[0]);
                 resolve (newPost)
             } catch {
                 reject('Error creating new post')

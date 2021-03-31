@@ -13,6 +13,6 @@ server.use('/posts', postRoutes)
 const port = process.env.PORT || 3000;
 
 // Root route
-server.get('/', (req, res) => res.send('Hello, world!'))
+//server.get('/', (req, res) => res.send('Hello, world!')) - might not be needed?
 
 module.exports = server
